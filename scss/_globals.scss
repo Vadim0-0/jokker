@@ -1,0 +1,78 @@
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  font-family: var(--font-family);
+  background-color: #fff;
+  min-height: 100%;
+}
+
+img {
+  max-width: 100%;
+  pointer-events: none;
+}
+
+a {
+  color: var(--black);
+  @include transition;
+}
+
+button {
+  font-family: var(--font-family)
+}
+
+.btn-global {
+  @include flex-center(10px);
+  padding: 14px 10px;
+  border-radius: 24px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #454545;
+  background: #D9D9D9;
+  @include transition;
+
+  &.active {
+    color: #fff;
+    background: linear-gradient(315deg, #ff4458 0%, #eb4e4e 100%);
+    pointer-events: all;
+  }
+}
+
+.section-title {
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: var(--black);
+
+  & span {
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.section-descr {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--black);
+  opacity: 0.7;
+}
