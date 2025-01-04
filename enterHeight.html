@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Рост</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="enterHeight">
+    <span class="line"></span>
+    <div class="container">
+      <div class="enterHeight__content">
+        <button class="back-btn" id="backBtn">
+          <svg width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.0975 16.84L1.5775 10.32C0.8075 9.55 0.8075 8.29 1.5775 7.52L8.0975 1" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <div class="enterHeight__content-info">
+          <span class="icon">
+            <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect width="150" height="150" fill="url(#pattern0_63_44474)" fill-opacity="0.5"/>
+              <defs>
+              <pattern id="pattern0_63_44474" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image0_63_44474" transform="scale(0.005)"/>
+              </pattern>
+              <image id="image0_63_44474" width="200" height="200" xlink:href="data:image/png;base64,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"/>
+              </defs>
+            </svg>
+          </span>
+          <h2>
+            Укажите свой рост
+          </h2>
+          <div class="enterHeight__content-info__inputs">
+            <label class="enterHeight__content-info__inputs-label">
+              <input class="enterHeight" type="number" maxlength="1" placeholder="Y">
+              <input class="enterHeight" type="number" maxlength="1" placeholder="Y">
+              <input class="enterHeight" type="number" maxlength="1" placeholder="Y">
+              <div class="enterHeight__content-info__inputs-label__line">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </label>
+          </div>
+          <p>
+            Рост укажите в сантиметрах
+          </p>
+        </div>
+        <button class="btn-global enterHeight__content-btn" id="nextButton" data-href="nextPage.html" disabled>Далее</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
